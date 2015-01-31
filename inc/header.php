@@ -19,7 +19,7 @@
 					<i class="icon-bar"></i>
 					<i class="icon-bar"></i>
 				</button>
-				<p><a class="navbar-brand" href="/"><i class="glyphicon glyphicon-qrcode" id="qr"></i><?php echo CODENAME;?></a><span id="dotcom">.com</span></p>
+				<p><a class="navbar-brand" href="/"><i class="glyphicon glyphicon-qrcode" id="qr"></i><?php echo CODENAME;?></a><!-- <span id="dotcom">.com</span> --></p>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right">
