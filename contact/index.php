@@ -9,15 +9,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nameErr = "Name is required";
  	} else {
     $name = xxx($_POST["inputName"]);
+  	if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
   }
   if (empty($_POST["inputEmail"])) {
   	$emailErr = "Valid email address is required";
   } else {
   	$email = xxx($_POST["inputEmail"]);
+  	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
   }
-  
+  if (empty($_POST["inputMessage"])) {
+  	$messageErr = "Message field can not be blank";
+  } else {
+  	$message = xxx($_POST["inputMessage"]);
+  }
   $reason = xxx($_POST["inputInquiry"]);
-  $message = xxx($_POST["inputMessage"]);
 }?>
 
 	<div class="container">
@@ -26,12 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="wrapper">
 				<div class="form-group has-feedback <?php if (!isset($nameErr)) echo "has-feedback-left"; else echo "has-error";?>">
 					<label for="inputName" class="control-label">Name</label>
-					<input type="text" placeholder="<?php if (isset($nameErr)) echo $nameErr; else echo "Enter Your Name";?>" value="<?php if (isset($name)) echo $name;?>" class="form-control" name="inputName">
+					<input type="text" placeholder="<?php if (isset($nameErr)) echo $nameErr; else echo "Enter Your Name";?>" value="<?php if ((isset($name)) && !isset($nameErr)) echo $name;?>" class="form-control" name="inputName">
 					<span class="glyphicon glyphicon-<?php if(isset($nameErr)) echo "warning-sign"; else echo "user";?> form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback <?php if (!isset($emailErr)) echo "has-feedback-left"; else echo "has-error";?>">
 					<label for="inputEmail" class="control-label">Email</label>
-					<input type="text" placeholder="<?php if (isset($emailErr)) echo $emailErr; else echo "Enter You Email Address";?>" value="<?php if (isset($email)) echo $email;?>" class="form-control" name="inputEmail">
+					<input type="text" placeholder="<?php if (isset($emailErr)) echo $emailErr; else echo "Enter You Email Address";?>" value="<?php if ((isset($email)) && !isset($emailErr)) echo $email;?>" class="form-control" name="inputEmail">
 					<span class="glyphicon glyphicon-<?php if(isset($emailErr)) echo "warning-sign"; else echo "envelope";?> form-control-feedback"></span>
 				</div>
 				<div class="form-group">
@@ -42,9 +51,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<option value="Collab">Collaboration (Unpaid Work)</option>
 					</select>
 				</div>
-				<div class="form group">
+				<div class="form-group <?php if (isset($messageErr)) echo "has-error";?>">
 					<label for="inputMessage" class="control-label">Message</label>
-					<textarea placeholder="Write Your Message" value="<?php if (isset($message)) echo $message;?>"class="form-control" rows="3" name="inputMessage"></textarea>
+					<textarea placeholder="<?php if (isset($messageErr)) echo $messageErr; else echo "Write Your Message";?>" value="<?php if (isset($message)) echo $message;?>" class="form-control" rows="3" name="inputMessage"></textarea>
+					<span class="<?php if (isset($messageErr)) echo "glyphicon glyphicon-warning-sign form-control-feedback";?>"></span>
 				</div>
 				<div class="form-group" id="submit-btn">
 					<input type="submit" class="btn btn-primary btn-lg center-block" value="Submit Button">
