@@ -6,8 +6,8 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php if(isset($pageTitle)){echo $pageTitle;}?></title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -19,14 +19,14 @@
 					<i class="icon-bar"></i>
 					<i class="icon-bar"></i>
 				</button>
-				<p><a class="navbar-brand" href="#"><i class="glyphicon glyphicon-qrcode" id="qr"></i><?php echo CODENAME;?></a><span id="dotcom">.com</span></p>
+				<p><a class="navbar-brand" href="/"><i class="glyphicon glyphicon-qrcode" id="qr"></i><?php echo CODENAME;?></a><span id="dotcom">.com</span></p>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="glyphicon glyphicon-user nvbr-glyph"></i>About</a></li>
         			<li><a href="#"><i class="glyphicon glyphicon-folder-open nvbr-glyph"></i>Portfolio</a></li>
         			<li><a href="#"><i class="glyphicon glyphicon-stats nvbr-glyph"></i>Skills</a></li>
-        			<li><a href="#"><i class="glyphicon glyphicon-comment nvbr-glyph"></i>Contact</a></li>
+        			<li><a href="/contact/"><i class="glyphicon glyphicon-comment nvbr-glyph"></i>Contact</a></li>
 				</ul>
 			</div>
 		</nav>
