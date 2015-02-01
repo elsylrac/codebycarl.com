@@ -7,7 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php if(isset($pageTitle)){echo $pageTitle;}?></title>
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Play|Montserrat:400,700" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<header>
@@ -23,7 +30,7 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li <?php if ($section == "index") echo "class=\"active\"";?>><a href="#"><i class="glyphicon glyphicon-user nvbr-glyph"></i>About</a></li>
+					<li <?php if ($section == "index") echo "class=\"active\"";?>><a href="/"><i class="glyphicon glyphicon-user nvbr-glyph"></i>About</a></li>
         			<li <?php if ($section == "portfolio") echo "class=\"active\"";?>><a href="#"><i class="glyphicon glyphicon-folder-open nvbr-glyph"></i>Portfolio</a></li>
         			<li <?php if ($section == "skills") echo "class=\"active\"";?>><a href="/skills/"><i class="glyphicon glyphicon-stats nvbr-glyph"></i>Skills</a></li>
         			<li <?php if ($section == "contact") echo "class=\"active\"";?>><a href="/contact/"><i class="glyphicon glyphicon-comment nvbr-glyph"></i>Contact</a></li>

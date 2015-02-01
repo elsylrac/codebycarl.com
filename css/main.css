@@ -16,6 +16,9 @@ section#html-skillset {
 section#css-skillset {
   margin-bottom: 40px;
 }
+section#js-skillset {
+  margin-bottom: 25px;
+}
 .container {
   max-width: 950px;
 }
@@ -71,9 +74,22 @@ section#css-skillset {
   padding-right: 25px;
 }
 .navbar-default .navbar-brand {
+  color: #1E2834;
   font-size: 35px;
+  font-family: 'Play', Garamond, sans-serif;
   font-weight: normal;
   padding-right: 1px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ED485C;
+    font-size: 16px;
+    font-family: 'Play', Helvetica, sans-serif;
+}
+.nvbr-glyph {
+  color: #1E2834;
+  font-size: 16px;
+  margin-right: 5px;
+  padding-right: 5px;
 }
 .skillset img#html-logo {
   max-width: 18.26440281030445%;
@@ -84,6 +100,10 @@ section#css-skillset {
 }
 .skillset img#js-logo {
   max-width: 15.86440281030445%;
+  margin: 0 12px 0 3px; 
+}
+.skillset img#php-logo {
+  max-width: 16.86440281030445%;
   margin: 0 12px 0 3px; 
 }
 .wrapper {
@@ -112,7 +132,7 @@ section#css-skillset {
   margin-bottom: 30px;
 }
 #qr {
-  font-size: 22px;
+  font-size: 25px;
   padding-right: 5px;
 }
 #submit-btn {

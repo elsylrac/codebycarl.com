@@ -33,6 +33,14 @@ include("../inc/header.php");
 						</div>
 					</div>
 				</section>
+				<section class="skillset" id="php-skillset">
+					<p><img src="/img/php-logo.svg" class="pull-left" id="php-logo"></p>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+							65%
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 	</div>
