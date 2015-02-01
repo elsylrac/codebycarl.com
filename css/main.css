@@ -7,6 +7,18 @@ footer {
   font-style: normal;
   text-align: center;
 }
+section.skillset {
+  padding-bottom: 50px;
+}
+section#html-skillset {
+  margin-top: 35px;
+}
+section#css-skillset {
+  margin-bottom: 40px;
+}
+.container {
+  max-width: 950px;
+}
 .form-control-feedback {
   line-height: 34px !important;
 }
@@ -55,10 +67,24 @@ footer {
 .has-feedback-left .form-control-feedback {
   left: 0;
 }
+.navbar-default {
+  padding-right: 25px;
+}
 .navbar-default .navbar-brand {
   font-size: 35px;
   font-weight: normal;
   padding-right: 1px;
+}
+.skillset img#html-logo {
+  max-width: 18.26440281030445%;
+}
+.skillset img#css3-logo {
+  max-width: 13.56440281030445%;
+  margin:0 12px 0 9px;
+}
+.skillset img#js-logo {
+  max-width: 15.86440281030445%;
+  margin: 0 12px 0 3px; 
 }
 .wrapper {
 	margin: 0 auto;
@@ -81,6 +107,9 @@ footer {
 }
 #heart:hover {
 	color: #f1c40f;
+}
+#html-skillset {
+  margin-bottom: 30px;
 }
 #qr {
   font-size: 22px;

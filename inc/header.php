@@ -23,10 +23,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="glyphicon glyphicon-user nvbr-glyph"></i>About</a></li>
-        			<li><a href="#"><i class="glyphicon glyphicon-folder-open nvbr-glyph"></i>Portfolio</a></li>
-        			<li><a href="#"><i class="glyphicon glyphicon-stats nvbr-glyph"></i>Skills</a></li>
-        			<li><a href="/contact/"><i class="glyphicon glyphicon-comment nvbr-glyph"></i>Contact</a></li>
+					<li <?php if ($section == "index") echo "class=\"active\"";?>><a href="#"><i class="glyphicon glyphicon-user nvbr-glyph"></i>About</a></li>
+        			<li <?php if ($section == "portfolio") echo "class=\"active\"";?>><a href="#"><i class="glyphicon glyphicon-folder-open nvbr-glyph"></i>Portfolio</a></li>
+        			<li <?php if ($section == "skills") echo "class=\"active\"";?>><a href="/skills/"><i class="glyphicon glyphicon-stats nvbr-glyph"></i>Skills</a></li>
+        			<li <?php if ($section == "contact") echo "class=\"active\"";?>><a href="/contact/"><i class="glyphicon glyphicon-comment nvbr-glyph"></i>Contact</a></li>
 				</ul>
 			</div>
 		</nav>
