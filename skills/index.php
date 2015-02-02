@@ -10,7 +10,7 @@ include("../inc/header.php");
 			<h1 class="text-center">Skills</h1>
 			<div class="wrapper">
 				<section class="skillset" id="html-skillset">
-					<p><img src="/img/html5-logo.svg" class="pull-left" id="html-logo"></p>
+					<p><img src="/img/logos/html5-logo.svg" class="pull-left" id="html-logo"></p>
 					<div class="progress html-progress">
 						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
 							85%
@@ -18,7 +18,7 @@ include("../inc/header.php");
 					</div>
 				</section>
 				<section class="skillset" id="css-skillset">
-					<p><img src="/img/css3-logo.svg" class="pull-left" id="css3-logo"></p>
+					<p><img src="/img/logos/css3-logo.svg" class="pull-left" id="css3-logo"></p>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
 							60%
@@ -26,7 +26,7 @@ include("../inc/header.php");
 					</div>
 				</section>
 				<section class="skillset" id="js-skillset">
-					<p><img src="/img/js-logo.svg" class="pull-left" id="js-logo"></p>
+					<p><img src="/img/logos/js-logo.svg" class="pull-left" id="js-logo"></p>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
 							40%
@@ -34,7 +34,7 @@ include("../inc/header.php");
 					</div>
 				</section>
 				<section class="skillset" id="php-skillset">
-					<p><img src="/img/php-logo.svg" class="pull-left" id="php-logo"></p>
+					<p><img src="/img/logos/php-logo.svg" class="pull-left" id="php-logo"></p>
 					<div class="progress">
 						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
 							65%

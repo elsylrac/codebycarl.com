@@ -6,6 +6,10 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php if(isset($pageTitle)){echo $pageTitle;}?></title>
+	<meta name="description" content="<?php echo DEVELOPER;?> | Front-end Web Developer">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Play|Montserrat:400,700" rel="stylesheet">
 	<link href="../css/main.css" rel="stylesheet">

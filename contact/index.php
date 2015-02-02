@@ -35,12 +35,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="wrapper">
 				<div class="form-group has-feedback <?php if (!isset($nameErr)) echo "has-feedback-left"; else echo "has-error";?>">
 					<label for="inputName" class="control-label">Name</label>
-					<input type="text" placeholder="<?php if (isset($nameErr)) echo $nameErr; else echo "Enter Your Name";?>" value="<?php if ((isset($name)) && !isset($nameErr)) echo $name;?>" class="form-control" name="inputName">
+					<input type="text" placeholder="<?php if (isset($nameErr)) echo $nameErr; else echo "e.g Jamall Doe";?>" value="<?php if ((isset($name)) && !isset($nameErr)) echo $name;?>" class="form-control" name="inputName">
 					<span class="glyphicon glyphicon-<?php if(isset($nameErr)) echo "warning-sign"; else echo "user";?> form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback <?php if (!isset($emailErr)) echo "has-feedback-left"; else echo "has-error";?>">
 					<label for="inputEmail" class="control-label">Email</label>
-					<input type="text" placeholder="<?php if (isset($emailErr)) echo $emailErr; else echo "Enter You Email Address";?>" value="<?php if ((isset($email)) && !isset($emailErr)) echo $email;?>" class="form-control" name="inputEmail">
+					<input type="text" placeholder="<?php if (isset($emailErr)) echo $emailErr; else echo "e.g email@example.com";?>" value="<?php if ((isset($email)) && !isset($emailErr)) echo $email;?>" class="form-control" name="inputEmail">
 					<span class="glyphicon glyphicon-<?php if(isset($emailErr)) echo "warning-sign"; else echo "envelope";?> form-control-feedback"></span>
 				</div>
 				<div class="form-group">
@@ -57,7 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					<span class="<?php if (isset($messageErr)) echo "glyphicon glyphicon-warning-sign form-control-feedback";?>"></span>
 				</div>
 				<div class="form-group" id="submit-btn">
-					<input type="submit" class="btn btn-primary btn-lg center-block" value="Submit Button">
+					<button type="submit" class="btn btn-primary btn-lg center-block">
+						<span class="glyphicon glyphicon-send"></span> Submit
+					</button>
 				</div>
 			</div>
 		</form>
